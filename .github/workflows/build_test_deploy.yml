@@ -21,10 +21,10 @@ jobs:
 
     - name: Install dependencies
       run: npm install
-    - name: Run the FE
-      run: npm start &
     - name: Run the BE
       run: npm server &
+    - name: Run the FE
+      run: npm start &
     - name: Install browsers
       run: npx playwright install
     - name: Run tests
